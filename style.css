@@ -1,0 +1,27 @@
+h1 {
+    margin: 0;
+}
+.item {
+    letter-spacing: -1rem;
+}
+.item * {
+    letter-spacing: 0;
+    display: inline-block;
+}
+.title {
+    display: inline-block;
+    width: 8rem;
+}
+.item input {
+    width: 8rem;
+    box-sizing: border-box;
+}
+#calc {
+    width: 16rem;
+}
+.text1 {
+    color: red;
+}
+.img {
+    width: 20%;
+}
