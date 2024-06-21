@@ -2,7 +2,7 @@
 body {
     font-family: 'M PLUS 1p', sans-serif;
 }
-h1 {
+h2 {
     margin: 0;
 }
 .item {
@@ -25,6 +25,9 @@ h1 {
 }
 #visibility {
     visibility: collapse;
+}
+table {
+    font-size: 12px;
 }
 .text1 {
     color: red;
