@@ -11,13 +11,13 @@
     <h1>経験値・ゴールド上限階計算機</h1><hr>
     <div class="item">
         <div class="title">所持EXPマイクロチップ数：</div>
-        <input type="number" id="expChips"><br>
+        <input type="number" id="expChips" min="0" max="1500"><br>
     </div>
     <div class="item">
         <div class="title">所持Gマイクロチップ数：</div>
-        <input type="number" id="goldChips"><br>
+        <input type="number" id="goldChips" min="0" max="500"><br>
     </div>
-    <button id="calc">決定</button><hr><br>
+    <button id="calc">決定</button><hr>
     <div id="output"></div><br>
     <table border="1" id="visibility">
         <tr>
