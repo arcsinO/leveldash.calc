@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function() {
             condition ++;
         }
         if (lvlNow < 0 || lvlGoal < 0) {
-            html = '<strong class="text1">０以上の数値を入力してください！</strong>';
+            html = '<strong class="text1">0以上の数値を入力してください！</strong>';
             condition ++;
         }
         if (isNaN(lvlNow) || isNaN(lvlGoal)) {
