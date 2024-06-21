@@ -120,7 +120,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
         if (condition == 0) {
             html = '所持ＥＸＰマイクロチップ' + expChips + '、所持Ｇマイクロチップ' + goldChips + 'での経験値とゴールドの上限とその階は、以下の表の通りです！';
-
             document.querySelector('#expMonster1').innerHTML = expMonster1 + ' EXP';
             document.querySelector('#expMonster2').innerHTML = expMonster2 + ' EXP';
             document.querySelector('#expMonster3').innerHTML = expMonster3 + ' EXP';
@@ -168,6 +167,10 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector('#goldFloor9').innerHTML = goldFloor9 + ' F';
             document.querySelector('#goldFloor10').innerHTML = goldFloor10 + ' F';
             document.querySelector('#goldFloorX').innerHTML = goldFloorX + ' F';
+
+            document.querySelector('#visibility').style.visibility = "visible";
+        } else {
+            document.querySelector('#visibility').style.visibility = "collapse";
         }
         document.querySelector('#output').innerHTML = html;
         console.log('html:' + html);

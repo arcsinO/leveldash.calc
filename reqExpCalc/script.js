@@ -89,6 +89,10 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector('#output2').innerHTML = html2;
             document.querySelector('#expSum').innerHTML = '<strong class="text1">' + expSum + ' EXP</strong>';
             document.querySelector('#expRate').innerHTML = '<strong class="text1">' + expRate + ' %</strong>';
+
+            document.querySelector('#visibility').style.visibility = "visible";
+        } else {
+            document.querySelector('#visibility').style.visibility = "collapse";
         }
         document.querySelector('#output').innerHTML = html;
         console.log('expSum:' + expSum);

@@ -70,6 +70,12 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector('#goldSum').innerHTML = '<strong class="text1">' + goldSum + ' G</strong>';
             document.querySelector('#cubeRate').innerHTML = '<strong class="text1">' + cubeRate + ' %</strong>';
             document.querySelector('#goldRate').innerHTML = '<strong class="text1">' + goldRate + ' %</strong>';
+
+            document.querySelector('#visibility1').style.visibility = "visible";
+            document.querySelector('#visibility2').style.visibility = "visible";
+        } else {
+            document.querySelector('#visibility1').style.visibility = "collapse";
+            document.querySelector('#visibility2').style.visibility = "collapse";
         }
         document.querySelector('#output').innerHTML = html;
         console.log('cubeSum:' + cubeSum);
