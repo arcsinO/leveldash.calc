@@ -4,39 +4,44 @@ body {
 }
 .item {
     letter-spacing: -1rem;
+    text-align: center;
 }
 .item * {
     letter-spacing: 0;
     display: inline-block;
 }
+.item div {
+    margin-right: 1em;
+    margin-left: 1em;
+}
 .title {
     display: inline-block;
-    width: 10%;
-}
-.item input {
-    width: 8rem;
-    box-sizing: border-box;
+    width: 10rem;
 }
 img {
     pointer-events: none;
 }
 .img_group {
     position: relative;
+    text-align: center;
 }
-.img_group img.img_back {
-    width: 100%;
+.img_back {
+    width: 500px;
 }
 .img_group img.img_player {
     position: absolute;
-    width: 10%;
+    width: 50px;
     top: 60%;
-    left:20%;
+    left:50%;
+    transform: translate(-50%, 0%);
 }
 .img_group img.img_monster {
     position: absolute;
-    width: 10%;
+    width: 50px;
     top: 60%;
     right:20%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 .column2 {
     column-count: 2;
@@ -70,7 +75,7 @@ button {
 .hp_bar {
     display: none;
 }
-.character_img {
+.img_section {
     display: block;
 }
 .coin_own {
