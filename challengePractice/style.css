@@ -17,8 +17,26 @@ body {
     width: 8rem;
     box-sizing: border-box;
 }
-.status_3 {
-    display: block;
+img {
+    pointer-events: none;
+}
+.img_group {
+    position: relative;
+}
+.img_group img.img_back {
+    width: 100%;
+}
+.img_group img.img_player {
+    position: absolute;
+    width: 10%;
+    top: 60%;
+    left:20%;
+}
+.img_group img.img_monster {
+    position: absolute;
+    width: 10%;
+    top: 60%;
+    right:20%;
 }
 .column2 {
     column-count: 2;
@@ -33,4 +51,40 @@ button {
     padding: 1em;
     border: black 2px solid;
     align-items: start;
+}
+
+/*各種画面*/
+
+.status_3 {
+    display: block;
+}
+.ability_shop {
+    display: none;
+}
+.parameter_setting {
+    display: none;
+}
+.bonus_shop {
+    display: none;
+}
+.hp_bar {
+    display: none;
+}
+.character_img {
+    display: block;
+}
+.coin_own {
+    display: none;
+}
+.button_start {
+    display: block;
+}
+.button_ability_reset {
+    display: none;
+}
+.button_parameter_reset {
+    display: none;
+}
+.button_choice {
+    display: none;
 }
