@@ -56,7 +56,13 @@ window.addEventListener('DOMContentLoaded', function() {
             cubeSum = cubeGoal - cubeNow;
             goldSum = goldGoal - goldNow;
             cubeRate = (100 * cubeNow / cubeGoal).toFixed(2);
+            if (cubeRate == 100) {
+                cubeRate = 99.99;
+            }
             goldRate = (100 * goldNow / goldGoal).toFixed(2);
+            if (goldRate == 100) {
+                goldRate = 99.99;
+            }
             html = '修正値' + lvlNow + 'から修正値' + lvlGoal + 'まで強化する際に必要なキューブとゴールドは、';
             html1 = "キューブ：";
             html2 = "ゴールド：";

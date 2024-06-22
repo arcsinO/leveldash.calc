@@ -82,6 +82,9 @@ window.addEventListener('DOMContentLoaded', function() {
         if (condition == 0) {
             expSum = expGoal - expNow;
             expRate = (100 * expNow / expGoal).toFixed(2);
+            if (expRate == 100) {
+                expRate = 99.99;
+            }
             html = 'レベル' + lvlNow + 'からレベル' + lvlGoal + 'までの必要経験値は、';
             html1 = "経験値：";
             html2 = "経験値の達成率：";

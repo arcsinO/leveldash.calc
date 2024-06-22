@@ -56,7 +56,13 @@ window.addEventListener('DOMContentLoaded', function() {
             crystalSum = crystalGoal - crystalNow;
             goldSum = goldGoal - goldNow;
             crystalRate = (100 * crystalNow / crystalGoal).toFixed(2);
+            if (crystalRate == 100) {
+                crystalRate = 99.99;
+            }
             goldRate = (100 * goldNow / goldGoal).toFixed(2);
+            if (goldRate == 100) {
+                goldRate = 99.99;
+            }
             html = '属性値' + lvlNow + 'から属性値' + lvlGoal + 'まで強化する際に必要なクリスタルとゴールドは、';
             html1 = "クリスタル：";
             html2 = "ゴールド：";
