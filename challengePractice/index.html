@@ -9,63 +9,157 @@
 </head>
 <body>
     <section>
-        <h1>チャレンジ練習</h1><div id="stage"></div>
+        <h1>チャレンジ練習</h1><hr>
     </section>
-    <section class="display">
+    <section class="status_3">
         <dl class="column3">
-            <dt>HP:</dt>
+            <dt>HP：</dt>
             <dt id="hpSum"></dt>
-            <dt>ATK:</dt>
+            <dt>攻撃力：</dt>
             <dt id="atkSum"></dt>
-            <dt>EVA:</dt>
+            <dt>回避率：</dt>
             <dt id="evaSum"></dt>
-        </dl>
+        </dl><hr>
     </section>
-    <section class="display">
-        <div>モンスターを倒すたびにHP+5</div>
-        <div>道中のレアモンスターの出現率+5%</div>
-        <div>チャレンジコインの獲得量+10%</div>
-        <div>チャレンジコイン保有で開始</div>
-        <div>ボーナスショップの補充回数</div>
-        <div>最大HP+250</div>
-        <div>攻撃命中時HP+1</div>
-        <div>基本攻撃力+50</div>
-        <div>回避率+10</div>
-        <div>大攻撃の命中率+25%</div>
-        <div>ポイントラッシュのベースポイント+3</div>
+    <section class="ability_shop">
+        <div class="item">
+            <div class="title">モンスターを倒すたびにHP+5<br>[現在：+<div>25</div>]</div>
+            <button>-</button>
+            <div>5/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">道中のレアモンスターの出現率+5%</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">チャレンジコインの獲得量+10%</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">チャレンジコイン+250保有で開始</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">ボーナスショップの補充回数+1</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">最大HP+50</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">HP最大時に回復マス選択で最大HP+50</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">攻撃命中時HP+1</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">基本攻撃力+10</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">回避率+5</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">大攻撃の攻撃力+10%</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">大攻撃の命中率+5%</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">ポイントラッシュのベースポイント+3</div>
+            <button>-</button>
+            <div>0/5</div>
+            <button>+</button>
+        </div><hr>
     </section>
-    <section>
+    <section class="parameter_setting">
+        <div class="item">
+            <div class="title">HP</div>
+            <button>-</button>
+            <div>125/125</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">攻撃力</div>
+            <button>-</button>
+            <div>25/25</div>
+            <button>+</button>
+        </div><hr>
+        <div class="item">
+            <div class="title">回避率：</div>
+            <button>-</button>
+            <div>11/11</div>
+            <button>+</button>
+        </div><hr>
+    </section>
+    <section class="bonus_shop">
         <div>shop1</div>
         <div>shop2</div>
-        <div>shop3</div>
+        <div>shop3</div><hr>
     </section>
-    <section>
+    <section class="hp_bar">
         <dl class="column2">
             <dt>HP:</dt>
             <dt id="hpNow"></dt>
             <dt>HP:</dt>
             <dt id="hpNow"></dt>
-        </dl>
+        </dl><hr>
     </section>
-    <section>
+    <section class="character_img">
         <img>
-        <img>
+        <img><hr>
     </section>
-    <section>
-        coin:<div id="coinOwn"></div>
+    <section class="coin_own">
+        coin:<div id="coinOwn"></div><hr>
     </section>
-    <section class="column2">
-        <button>アビリティ</button>
-        <button>スタート</button>
+    <section class="button_start">
+        <dl class="column3">
+            <dt align="center"><button>スタート</button></dt>
+            <dt align="center"><button>アビリティ</button></dt>
+            <dt align="center"><button>パラメータ</button></dt>
+        </dl><hr>
     </section>
-    <section class="column2">
-        <button>閉じる</button>
-        <button>スタート</button>
+    <section class="button_ability_reset">
+        <dl class="column2">
+            <dt align="center"><button>閉じる</button></dt>
+            <dt align="center"><button>リセット</button></dt>
+        </dl><hr>
     </section>
-    <section class="column3">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+    <section class="button_choice">
+        <dl class="column3">
+            <dt align="center"><button>1</button></dt>
+            <dt align="center"><button>2</button></dt>
+            <dt align="center"><button>3</button></dt>
+        </dl><hr>
     </section>
 </body>
 </html>
