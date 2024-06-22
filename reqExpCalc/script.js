@@ -12,15 +12,15 @@ window.addEventListener('DOMContentLoaded', function() {
         let html;
         let condition = 0;
         if (lvlNow >= lvlGoal) {
-            html = '<strong class="text1">既に目標のレベルに達しています！</strong>';
+            html = '<strong class="text1">既に目標のレベルに達しています！</strong><hr>';
             condition ++;
         }
         if (lvlNow <= 0 || lvlGoal <= 0) {
-            html = '<strong class="text1">自然数を入力してください！</strong>';
+            html = '<strong class="text1">自然数を入力してください！</strong><hr>';
             condition ++;
         }
         if (isNaN(lvlNow) || isNaN(lvlGoal)) {
-            html = '<strong class="text1">数値を入力してください！</strong>';
+            html = '<strong class="text1">数値を入力してください！</strong><hr>';
             condition ++;
         }
         console.log('html:' + html);
@@ -90,9 +90,9 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector('#expSum').innerHTML = '<strong class="text1">' + expSum + ' EXP</strong>';
             document.querySelector('#expRate').innerHTML = '<strong class="text1">' + expRate + ' %</strong>';
 
-            document.querySelector('#visibility').style.visibility = "visible";
+            document.querySelector('.display').style.display = "block";
         } else {
-            document.querySelector('#visibility').style.visibility = "collapse";
+            document.querySelector('.display').style.display = "none";
         }
         document.querySelector('#output').innerHTML = html;
         console.log('expSum:' + expSum);

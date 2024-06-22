@@ -23,11 +23,8 @@ h1 {
 #calc {
     width: 16rem;
 }
-#visibility1 {
-    visibility: collapse;
-}
-#visibility2 {
-    visibility: collapse;
+.display {
+    display: none;
 }
 .text1 {
     color: red;

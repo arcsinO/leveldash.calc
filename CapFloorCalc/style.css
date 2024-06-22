@@ -23,8 +23,8 @@ h2 {
 #calc {
     width: 22rem;
 }
-#visibility {
-    visibility: collapse;
+.display {
+    display: none;
 }
 table {
     font-size: 12px;

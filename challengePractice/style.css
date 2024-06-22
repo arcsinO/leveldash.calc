@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.display {
+    display: block;
+}
+.column2 {
+    column-count: 2;
+}
+.column3 {
+    column-count: 3;
+}

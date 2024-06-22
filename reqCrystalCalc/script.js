@@ -12,15 +12,15 @@ window.addEventListener('DOMContentLoaded', function() {
         let html;
         let condition = 0;
         if (lvlNow >= lvlGoal) {
-            html = '<strong class="text1">既に目標の属性値まで強化しています！</strong>';
+            html = '<strong class="text1">既に目標の属性値まで強化しています！</strong><hr>';
             condition ++;
         }
         if (lvlNow < 0 || lvlGoal < 0) {
-            html = '<strong class="text1">0以上の数値を入力してください！</strong>';
+            html = '<strong class="text1">0以上の数値を入力してください！</strong><hr>';
             condition ++;
         }
         if (isNaN(lvlNow) || isNaN(lvlGoal)) {
-            html = '<strong class="text1">数値を入力してください！</strong>';
+            html = '<strong class="text1">数値を入力してください！</strong><hr>';
             condition ++;
         }
         console.log('html:' + html);
@@ -71,11 +71,9 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector('#crystalRate').innerHTML = '<strong class="text1">' + crystalRate + ' %</strong>';
             document.querySelector('#goldRate').innerHTML = '<strong class="text1">' + goldRate + ' %</strong>';
 
-            document.querySelector('#visibility1').style.visibility = "visible";
-            document.querySelector('#visibility2').style.visibility = "visible";
+            document.querySelector('.display').style.display = "block";
         } else {
-            document.querySelector('#visibility1').style.visibility = "collapse";
-            document.querySelector('#visibility2').style.visibility = "collapse";
+            document.querySelector('.display').style.display = "none";
         }
         document.querySelector('#output').innerHTML = html;
         console.log('crystalSum:' + crystalSum);

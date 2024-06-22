@@ -12,15 +12,15 @@ window.addEventListener('DOMContentLoaded', function() {
         let html;
         let condition = 0;
         if (expChips > 1500 || goldChips > 500) {
-            html = '<strong class="text1">所持不可能な数値です！</strong>';
+            html = '<strong class="text1">所持不可能な数値です！</strong><hr>';
             condition ++;
         }
         if (expChips < 0 || goldChips < 0) {
-            html = '<strong class="text1">0以上の数値を入力してください！</strong>';
+            html = '<strong class="text1">0以上の数値を入力してください！</strong><hr>';
             condition ++;
         }
         if (isNaN(expChips) || isNaN(goldChips)) {
-            html = '<strong class="text1">数値を入力してください！</strong>';
+            html = '<strong class="text1">数値を入力してください！</strong><hr>';
             condition ++;
         }
         console.log('html:' + html);
@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', function() {
         console.log('goldFloorX:' + goldFloorX);
 
         if (condition == 0) {
-            html = '所持ＥＸＰマイクロチップ' + expChips + '、所持Ｇマイクロチップ' + goldChips + 'での経験値とゴールドの上限とその階は、以下の表の通りです！';
+            html = '所持EXPマイクロチップ' + expChips + '、所持Gマイクロチップ' + goldChips + 'での経験値とゴールドの上限とその階は、以下の表の通りです！';
             document.querySelector('#expMonster1').innerHTML = expMonster1 + ' EXP';
             document.querySelector('#expMonster2').innerHTML = expMonster2 + ' EXP';
             document.querySelector('#expMonster3').innerHTML = expMonster3 + ' EXP';
@@ -168,9 +168,9 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector('#goldFloor10').innerHTML = goldFloor10 + ' F';
             document.querySelector('#goldFloorX').innerHTML = goldFloorX + ' F';
 
-            document.querySelector('#visibility').style.visibility = "visible";
+            document.querySelector('.display').style.display = "block";
         } else {
-            document.querySelector('#visibility').style.visibility = "collapse";
+            document.querySelector('.display').style.display = "none";
         }
         document.querySelector('#output').innerHTML = html;
         console.log('html:' + html);
