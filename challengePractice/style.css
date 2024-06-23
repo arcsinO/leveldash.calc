@@ -52,10 +52,115 @@ img {
 .column3 {
     column-count: 3;
 }
+
+/* 各種ボタン */
+
 button {
     padding: 1em;
     border: black 2px solid;
     align-items: start;
+}
+#ability_killMonsterHeal_btn_down {
+    background-color: gray;
+}
+#ability_killMonsterHeal_btn_up {
+    background-color: white;
+}
+#ability_rareMonsterRate_btn_down {
+    background-color: gray;
+}
+#ability_rareMonsterRate_btn_up {
+    background-color: white;
+}
+#ability_coinGetRate_btn_down {
+    background-color: gray;
+}
+#ability_coinGetRate_btn_up {
+    background-color: white;
+}
+#ability_initialCoin_btn_down {
+    background-color: gray;
+}
+#ability_initialCoin_btn_up {
+    background-color: white;
+}
+#ability_initialCoin_btn_down {
+    background-color: gray;
+}
+#ability_initialCoin_btn_up {
+    background-color: white;
+}
+#ability_refillBonusShop_btn_down {
+    background-color: gray;
+}
+#ability_refillBonusShop_btn_up {
+    background-color: white;
+}
+#ability_maxHp_btn_down {
+    background-color: gray;
+}
+#ability_maxHp_btn_up {
+    background-color: white;
+}
+#ability_maxHpIncrease_btn_down {
+    background-color: gray;
+}
+#ability_maxHpIncrease_btn_up {
+    background-color: white;
+}
+#ability_attackHeal_btn_down {
+    background-color: gray;
+}
+#ability_attackHeal_btn_up {
+    background-color: white;
+}
+#ability_atk_btn_down {
+    background-color: gray;
+}
+#ability_atk_btn_up {
+    background-color: white;
+}
+#ability_evaRate_btn_down {
+    background-color: gray;
+}
+#ability_evaRate_btn_up {
+    background-color: white;
+}
+#ability_criticalAtkRate_btn_down {
+    background-color: gray;
+}
+#ability_criticalAtkRate_btn_up {
+    background-color: white;
+}
+#ability_criticalDexRate_btn_down {
+    background-color: gray;
+}
+#ability_criticalDexRate_btn_up {
+    background-color: white;
+}
+#ability_basePoint_btn_down {
+    background-color: gray;
+}
+#ability_basePoint_btn_up {
+    background-color: white;
+}
+#parameter_hp_btn_down {
+    background-color: white;
+}
+#parameter_hp_btn_up {
+    background-color: gray;
+}
+#parameter_atk_btn_down {
+    background-color: white;
+}
+#parameter_atk_btn_up {
+    background-color: gray;
+}
+#parameter_evaRate_btn_down {
+    background-color: white;
+}
+#parameter_evaRate_btn_up {
+    background-color: gray;
 }
 
 /*各種画面*/
