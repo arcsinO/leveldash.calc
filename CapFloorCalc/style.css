@@ -28,6 +28,7 @@ h2 {
 }
 table {
     font-size: 12px;
+    width: 100%;
 }
 .text1 {
     color: red;
